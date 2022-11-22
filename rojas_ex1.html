@@ -1,0 +1,201 @@
+<style>
+    @font-face{
+        font-family: "IBM Plex Sans";
+        src: url(IBMPlexSans-Regular.ttf)
+    }
+    @font-face{
+        font-family: "IBM Plex Sans Light";
+        src: url(IBMPlexSans-Light.ttf)
+    }
+    *{
+        margin: 0;
+    }
+    body{
+        margin: 0;
+        background-color: #141414;
+        color: #ececec;
+    }
+    body::-webkit-scrollbar{
+        background-color: #141414;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: transparent;
+        border: 1px solid #ececec;
+        border-radius: 5px;
+    }
+    #title{
+        font-size: 35px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-style: italic;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+    }
+    ul li{
+        list-style-type: none;
+        font-family: "IBM Plex Sans", sans-serif;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    ul li:hover{
+        color: #fc6e5e;
+    }
+    a, a:hover, a:focus, a:active{
+        text-decoration: inherit;
+        color: inherit;
+    }
+    nav{
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        user-select: none;
+    }
+    .content{
+        margin: 0 50px;
+        padding: 5px 10px;
+
+    }
+    .content h3{
+        font-family: "IBM Plex Sans Light", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: justify;
+    }
+    .content h1{
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 25px;
+    }
+    blockquote{
+        font-family: "IBM Plex Sans Light", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: justify;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container img{
+        min-width: 200px;
+        max-width: 800px;
+    }
+    .container .text-container{
+        min-width: 200px;
+        max-width: 800px;
+        margin: 20px 0;
+    }
+    @media (max-width: 767px){
+        #title{
+            display: none;
+        }
+    }
+
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CORONAVIRUS INFORMATION</title>
+</head>
+<body>
+
+
+    <nav>
+        <h1 id="title">CORONAVIRUS</h1>
+        <ul>
+            <li><a href="rojas_ex1.html">Home</a></li>
+            <li><a href="discussion.html">Discussion</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <img src="https://healthmatters.nyp.org/wp-content/uploads/2020/03/Article-hero.jpg" alt="">
+            <div class="text-container">
+                <h1>What is Coronavirus?</h1>
+                <br>
+                <h3>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
+                    <br>
+                    <br>
+                    Most people infected with the virus will experience mild to moderate respiratory illness
+                    and recover without requiring special treatment. However, some will become seriously ill
+                    and require medical attention. Older people and those with underlying medical conditions
+                    like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more
+                    likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously
+                    ill or die at any age.
+                    <br>
+                    <br>
+                    The best way to prevent and slow down transmission is to be well informed about the disease
+                    and how the virus spreads. Protect yourself and others from infection by staying at least 1
+                    metre apart from others, wearing a properly fitted mask, and washing your hands or using an
+                    alcohol-based rub frequently. Get vaccinated when it’s your turn and follow local guidance.
+                </h3>
+            </div>
+            <div class="text-container">
+                <h1>Origins of Coronavirus</h1>
+                <br>
+                <blockquote>
+                    In December 2019, an outbreak of pneumonia of unknown origin was reported in Wuhan, Hubei Province
+                    , China. Pneumonia cases were epidemiologically linked to the Huanan Seafood Wholesale Market.
+                    Inoculation of respiratory samples into human airway epithelial cells, Vero E6 and Huh7 cell lines,
+                    led to the isolation of a novel respiratory virus whose genome analysis showed it to be a novel
+                    coronavirus related to SARS-CoV, and therefore named severe acute respiratory syndrome coronavirus 2
+                    (SARS-CoV-2).
+                    <br>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d439721.4288917488!2d114.02020943526328!3d30.56840730433942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x342eaef8dd85f26f%3A0x39c2c9ac6c582210!2sWuhan%2C%20Hubei%2C%20China!5e0!3m2!1sen!2sph!4v1669096185388!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br>
+                    <br>
+                    SARS-CoV-2 is a betacoronavirus belonging to the subgenus Sarbecovirus. The global
+                    spread of SARS-CoV-2 and the thousands of deaths caused by coronavirus disease (COVID-19) led the
+                    World Health Organization to declare a pandemic on 12 March 2020. To date, the world has paid a high
+                    toll in this pandemic in terms of human lives lost, economic repercussions and increased poverty.
+                </blockquote>
+                <br>
+
+                <h3>
+                    A cluster of patients presented with pneumonia of unknown etiology in Wuhan city of China was reported
+                    to the Chinese Center for Disease Control (CDC) on 31, December 2019. Initial investigations identified
+                    a novel coronavirus designated as SARS-CoV-2 (previously known as 2019-nCoV) as the etiological agent [9].
+                    <br>
+                    <br>
+                    The infection was originated in Huanan seafood and animal market in Wuhan city of Hubei province and it
+                    provided some link to an animal to human transmission through the sale of seafood and live animals [6,7].
+                    Subsequently, the infection was noticed in increasing number of patients inside as well as outside the Wuhan
+                    city, who did not have exposure to animal markets and this suggested person to person transmission [6,7].
+                    <br>
+                    <br>
+                    The novel coronavirus was found to be highly contagious and has rapidly spread across the world within a span of
+                    2-3 months. The number of COVID-19 related cases and deaths increased exponentially outside of China since the
+                    beginning of March 2020 [11,12].
+                    <br>
+                    <br>
+                    So far around 213 countries and territories have reported novel coronavirus cases
+                    [12]. On January 30, 2020, the International Health Regulations Emergency Committee of the World Health Organization
+                    declared the outbreak as a public health emergency of international concern (PHEIC) [13]. Further, on February 19,
+                    2020, WHO coined the term COVID-19 and declared this novel coronavirus disease as a pandemic on March 11, 2020
+                    (Figure 2: Timeline in the key events of SARS-CoV-2) [1,10].
+                    <br>
+                    <br>
+                    As of June 8, 2020, more than 7 million cases and 400 thousand deaths were reported globally. The COVID-19 has resulted in unprecedented human and health crisis
+                    and the measures undertaken to contain the frightening pandemic has resulted in the global financial crisis.
+                </h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

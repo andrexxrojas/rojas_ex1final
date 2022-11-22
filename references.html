@@ -1,0 +1,357 @@
+<style>
+    @font-face{
+        font-family: "IBM Plex Sans";
+        src: url(IBMPlexSans-Regular.ttf)
+    }
+    @font-face{
+        font-family: "IBM Plex Sans Light";
+        src: url(IBMPlexSans-Light.ttf)
+    }
+    *{
+        margin: 0;
+    }
+    body{
+        margin: 0;
+        background-color: #141414;
+        color: #ececec;
+    }
+    body::-webkit-scrollbar{
+        background-color: #141414;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: transparent;
+        border: 1px solid #ececec;
+        border-radius: 5px;
+    }
+    #title{
+        font-size: 35px;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+    }
+    ul li{
+        list-style-type: none;
+        font-family: "IBM Plex Sans", sans-serif;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    ul li:hover{
+        color: #fc6e5e;
+    }
+    a, a:hover, a:focus, a:active{
+        text-decoration: inherit;
+        color: inherit;
+    }
+    nav{
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        user-select: none;
+    }
+    .content{
+        margin: 0 50px;
+        padding: 5px 10px;
+
+    }
+    .content h3{
+        font-family: "IBM Plex Sans Light", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: justify;
+    }
+    .content .container .text-container .references-container{
+        width: 800px;
+        overflow-wrap: break-word;
+    }
+    .content .container .text-container .references-container h3{
+        text-align: left;
+    }
+    .content h1{
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 25px;
+    }
+    blockquote{
+        font-family: "IBM Plex Sans Light", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: justify;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container img{
+        min-width: 200px;
+        max-width: 800px;
+    }
+    .container .text-container{
+        min-width: 200px;
+        max-width: 800px;
+        margin: 20px 0;
+    }
+    hr{
+        background-color: #fc6e5e;
+    }
+    @media (max-width: 860px){
+        .content .container .text-container .references-container{
+            width: 400px;
+            overflow-wrap: break-word;
+        }
+    }
+    @media (max-width: 767px){
+        #title{
+            display: none;
+        }
+    }
+    .content-table{
+        border-collapse: collapse;
+        margin-top: 15px;
+        font-size: 15px;
+        font-family: "IBM Plex Sans", sans-serif;
+        width: 100%;
+
+    }
+    .content-table thead tr{
+        color: #fc6e5e;
+        text-align: left;
+        font-weight: bold;
+    }
+    .content-table thead tr th{
+        border: 1px solid #ececec;
+    }
+    .content-table th,
+    .content-table td{
+        padding: 12px 15px;
+    }
+    .content-table tbody tr{
+        border: 1px solid #ececec;
+        transition: 0.3s linear;
+    }
+    .content-table tbody tr:hover{
+        color: #fc6e5e;
+    }
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CORONAVIRUS INFORMATION</title>
+</head>
+<body>
+    <nav>
+        <h1 id="title">CORONAVIRUS</h1>
+        <ul>
+            <li><a href="rojas_ex1.html">Home</a></li>
+            <li><a href="discussion.html">Discussion</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <div class="text-container">
+                <h1>COVID-19 Situation in WHO - Western Pacific Region</h1>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Total cases</th>
+                            <th>Total deaths</th>
+                            <th>Daily cases</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Japan</td>
+                            <td>23,814,209</td>
+                            <td>48,338</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Korea</td>
+                            <td>26,654,729</td>
+                            <td>30,111</td>
+                            <td>72,873</td>
+                        </tr>
+                        <tr>
+                            <td>Philippines</td>
+                            <td>4,026,895</td>
+                            <td>64,485</td>
+                            <td>938</td>
+                        </tr>
+                        <tr>
+                            <td>Vietnam</td>
+                            <td>11,511,822</td>
+                            <td>43,169</td>
+                            <td>370</td>
+                        </tr><tr>
+                            <td>Australia</td>
+                            <td>10,532,366</td>
+                            <td>15,146</td>
+                            <td>0</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br>
+                <h1>COVID-19: Prevention and control measures in community</h1>
+                <br>
+                <h3>
+                    In late 2019, a novel coronavirus, now designated SARS-CoV-2, was identified as
+                    the cause of an outbreak of acute respiratory illness in Wuhan, a city in the Hubei
+                    province of China. In February 2020, the World Health Organization (WHO) designated
+                    the disease COVID-19, which stands for coronavirus disease 2019. The clinical presentation
+                    of 2019-nCoV infection ranges from asymptomatic to very severe pneumonia with acute
+                    respiratory distress syndrome, septic shock and multi-organ failure, which may result
+                    in death [1]. On January 30, 2020, the WHO declared the COVID-19 outbreak a public health
+                    emergency of international concern and, in March 2020, began to characterize it as a pandemic
+                    in order to emphasize the gravity of the situation and urge all countries to take action in
+                    detecting infection and preventing spread.
+                    <br>
+                    <br>
+                    The virus that causes COVID-19 is thought to spread mainly from person to person, mainly
+                    through respiratory droplets produced when an infected person coughs or sneezes. These
+                    droplets can land in the mouths or noses of people who are nearby or possibly be inhaled
+                    into the lungs. Other routes have also been implicated in the transmission of coronaviruses,
+                    such as contact with contaminated fomites and inhalation of aerosols, produced during aerosol
+                    generating procedures. Transmission of SARS-CoV-2 from asymptomatic individuals (or individuals
+                    within the incubation period) has also been described. However, the extent to which this occurs
+                    remains unknown [2].
+                    <br>
+                    <br>
+                    Unfortunately, there is no medication that has been approved by the FDA, gone through controlled
+                    studies and demonstrated an effect on the virus for this global pandemic. Although there are cures
+                    for illnesses and developments made by leaps and bounds in our day, the strongest and most effective
+                    weapon that society has against this virus that is effecting not just health but also economics, politics,
+                    and social order, is the prevention of its spread. The interim guidance published by the WHO on 7 March 2020,
+                    “Responding to community spread of COVID-19,” states that preventing COVID-19 from spreading is through the
+                    development of coordination mechanisms not just in health but in areas such as transportation, travel, commerce,
+                    finance, security and other sectors which encompasses the entirety of society [3].
+                    <br>
+                    <br>
+                    The most important strategy for the population to undertake is to frequently wash their hands and use portable
+                    hand sanitizer and avoid contact with their face and mouth after interacting with a possibly contaminated
+                    environment. To reduce the risk of transmission in the community, individuals should be advised to wash hands
+                    diligently, practice respiratory hygiene (i.e., cover their cough), and avoid crowds and close contact with ill
+                    individuals, if possible. There are posters and brochures prepared by many organizations on all issues related
+                    to protection from COVID-19 and are widely used all over the world (Figure 1).
+                    <br>
+                    <br>
+                    The WHO and other similar health organizations have published visual tools such as videos and posters to demonstrate
+                    the correct application of
+                    hand hygiene throughout the entire society (Figure 2).These posters, distributed throughout different parts of
+                    society in order to draw maximum attention to the importance of hand hygiene, created awareness among all of
+                    them. With the increase in the number of people carrying hand sanitizer with them for the application of instant
+                    hand hygiene and the spread of mask usage among people in countries such as China, Korea, and Japan, the pandemic
+                    was brought under control much more quickly. In those countries where such measures were not made mandatory, the
+                    exponential rise in the number of cases continues.
+                </h3>
+                <br>
+                <h1>Personal protective equipment</h1>
+                <br>
+                <h3>
+                    For people without respiratory symptoms, the WHO does not recommend wearing a medical mask in the community,
+                    since it does not decrease the importance of other general measures to prevent infection. The single use of
+                    a mask does not obstruct the disease; the improper use of the mask actually increases the risk of COVID-19
+                    infection. In the WHO’s “Advice on the use of masks in the context of COVID-19” interim guidance, the prioritized
+                    use of medical masks by health personnel was emphasized [4].
+                    <br>
+                    <br>
+                    To reduce COVID-19 transmission from potentially asymptomatic or presymptomatic people, the ECDC recommends the
+                    use of face masks [5]. The use of face masks in the community may primarily serve as a means of source control.
+                    This measure can be particularly relevant in epidemic situations when the number of asymptomatic but infectious
+                    persons in the community can be assumed to be high. Wearing a face mask could be considered, especially when
+                    visiting busy, closed spaces, such as grocery stores, shopping centres, etc.; when using public transport; and
+                    for certain workplaces and professions that involve physical proximity to many other people (such as members of
+                    the police force, cashiers – if not behind a glass partition, etc.) and when teleworking is not possible.
+                    <br>
+                    <br>
+                    In the United States, the CDC updated its recommendations in early April to advise individuals to wear a cloth
+                    face covering (i.e., homemade masks or bandanas) when in public settings where social distancing is difficult
+                    to achieve, especially in areas with substantial community transmission [6]. Individuals should be counseled
+                    to avoid touching the eyes, nose, and mouth when removing the covering, practice hand hygiene after handling
+                    it, and launder it routinely.
+                    <br>
+                    <br>
+                    The rationale for the face covering is primarily to contain secretions of and prevent transmission from individuals
+                    who have asymptomatic or presymptomatic infection. The CDC also reiterates that the face covering recommendation
+                    does not include medical masks, which should be reserved for health care workers.
+                    <br>
+                    <br>
+                    Individuals who are caring for patients with suspected or documented COVID-19 at home should also wear a face cover
+                    when in the same room as that patient (if the patient cannot wear a face cover).
+                </h3>
+                <br>
+                <h1>Social distancing</h1>
+                <br>
+                <h3>
+                    Social distancing is designed to reduce interactions between people in a broader community, in which individuals
+                    may be infectious but have not yet been identified hence not yet isolated [7]. As diseases transmitted by respiratory
+                    droplets require a certain proximity of people, social distancing of persons will reduce transmission. Social
+                    distancing is particularly useful in settings where community transmission is believed to have occurred, but where
+                    the linkages between cases is unclear, and where restrictions placed only on persons known to have been exposed is
+                    considered insufficient to prevent further transmission. Examples for social distancing include closure of schools
+                    or office buildings and suspension of public markets, and cancellation of gatherings. In public markets where it is
+                    difficult to maintain social distance, limitation of the entered person and encouraging online shopping can reduce
+                    the amount of contact.
+                    <br>
+                    <br>
+                    Workplaces are also one of the high-risk areas for COVID-19 transmission. Therefore, home office working must be
+                    encouraged if possible. In workplaces where home office working is not possible, adherence to recommendations of
+                    WHO remains quite important [8].
+                    <br>
+                    <br>
+                    Studies have been conducted that support the infectiousness of SARS-CoV-2 in the presymptomatic stage; social
+                    distancing is thus of critical importance in establishing control over the pandemic[2].
+                </h3>
+                <br>
+                <h1>References (APA Format)</h1>
+                <br>
+                <div class="references-container">
+                    <h3>
+                        World Health Organization. (n.d.). Coronavirus. World Health Organization. Retrieved November 22, 2022, from
+                        https://www.who.int/health-topics/coronavirus#tab=tab_1
+                        <br>
+                        <br>
+                        World Health Organization. (n.d.). Impact of covid-19 on people's livelihoods, their health and our Food Systems.
+                        World Health Organization. Retrieved November 22, 2022, from https://www.who.int/news/item/13-10-2020-impact-of-
+                        covid-19-on-people%27s-livelihoods-their-health-and-our-food-systems
+                        <br>
+                        <br>
+                        BS, M. (n.d.). Covid-19: An insight into SARS-COV-2 pandemic originated at Wuhan City in Hubei Province of China.
+                        COVID-19: An Insight into SARS-CoV-2 Pandemic Originated at Wuhan City in Hubei Province of China. Retrieved November
+                        22, 2022, from https://clinmedjournals.org/articles/jide/journal-of-infectious-diseases-and-epidemiology-jide-6-146.php
+                        <br>
+                        <br>
+                        Google. (n.d.). Google maps. Retrieved November 22, 2022, from https://www.google.com/maps/place/Wuhan,+Hubei,+China/@30.
+                        5684073,114.0202094,10z/data=!3m1!4b1!4m5!3m4!1s0x342eaef8dd85f26f:0x39c2c9ac6c582210!8m2!3d30.5927599!4d114.30525
+                        <br>
+                        <br>
+                        Experience. (n.d.). Retrieved November 22, 2022, from https://experience.arcgis.com/experience/e1a2a65fe0ef4b5ea621b232c23618d5
+                        <br>
+                        <br>
+                        Güner, R., Hasanoğlu, I., &amp; Aktaş, F. (2020, April 21). Covid-19: Prevention and control measures in community.
+                        Turkish journal
+                        of medical sciences. Retrieved November 22, 2022, from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7195988/
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
